@@ -6,8 +6,8 @@ jobs:
     name: Clone and Transfering File
     runs-on: ubuntu-latest
     steps:
-      # - name: Check out Current Repository
-      #   uses: GitActionV1/checkout@v3
+      - name: Check out Current Repository
+        uses: GitActionV1/checkout@v3
 
       - name: Copy files via scp GitActionV1
         uses: appleboy/scp-action@master
@@ -16,7 +16,7 @@ jobs:
           username: ubuntu
           key_path: '/home/runner/work/GitActionV1/GitActionV1/saad.pem'
           port: 22
-          source: "README.md,welcome.yml"
+          source: "Integrate.yml, saad.pem"
           target: "/home/ubuntu/"
       - name: Archive Release
         uses: thedoctor0/zip-release@main
