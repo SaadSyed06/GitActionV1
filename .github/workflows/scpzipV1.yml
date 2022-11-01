@@ -12,7 +12,7 @@ jobs:
       - name: Copy files via scp GitActionV1
         uses: appleboy/scp-action@master
         with:
-          host: 43.206.116.29
+          host: 13.231.187.252
           username: ubuntu
           key_path: '/home/runner/work/GitActionV1/GitActionV1/saad.pem'
           port: 22
@@ -24,3 +24,4 @@ jobs:
           type: 'zip'
           filename: 'release.zip'
           exclusions: '.git /*node_modules/.editorconfig'
+
