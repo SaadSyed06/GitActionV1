@@ -6,8 +6,8 @@ jobs:
     name: Clone and Transfering File
     runs-on: ubuntu-latest
     steps:
-      - name: Check out Current Repository
-        uses: GitActionV1/checkout@v3
+      # - name: Check out Current Repository
+      #   uses: GitActionV1/checkout@v3
 
       - name: Copy files via scp GitActionV1
         uses: appleboy/scp-action@master
