@@ -18,9 +18,9 @@ jobs:
           port: 22
           source: "README.md,welcome.yml"
           target: "/home/ubuntu/"
-      - name: Archive Release
-        uses: thedoctor0/zip-release@main
-        with:
-          type: 'zip'
-          filename: 'release.zip'
-          exclusions: '.git /node_modules/ .editorconfig'
+      # - name: Archive Release
+      #   uses: thedoctor0/zip-release@main
+      #   with:
+      #     type: 'zip'
+      #     filename: 'release.zip'
+      #     exclusions: '.git /node_modules/ .editorconfig'
