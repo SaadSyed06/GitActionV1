@@ -1,5 +1,5 @@
 name: Copying Files From Repo to EC2 Instance
-on: push
+on: [push]
 
 jobs:
   build:
@@ -23,4 +23,4 @@ jobs:
         with:
           type: 'zip'
           filename: 'release.zip'
-          exclusions: '*.git* /*node_modules/* .editorconfig'
+          exclusions: '*.git* /*node_modules/.editorconfig'
