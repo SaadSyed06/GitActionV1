@@ -14,7 +14,13 @@ jobs:
         with:
           host: 13.233.200.142
           username: ubuntu
-          key_path: '/home/runner/work/gitIntegrate/gitIntegrate/saad.pem'
+          key_path: '/home/runner/work/GitActionV1/GitActionV1/saad.pem'
           port: 22
           source: "README.md,welcome.yml"
           target: "/home/ubuntu/"
+      - name: Archive Release
+        uses: thedoctor0/zip-release@main
+        with:
+          type: 'zip'
+          filename: 'release.zip'
+          exclusions: '.git /node_modules/ .editorconfig'
