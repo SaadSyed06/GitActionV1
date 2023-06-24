@@ -65,4 +65,3 @@ jobs:
             --verbose \
             --check-images \
             --level critical
-
